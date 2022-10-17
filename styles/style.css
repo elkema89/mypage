@@ -161,7 +161,7 @@ div div img {
     height: 500px;
     display: flex;
     text-align: center;
-    background-image: url(./../multimedia/header.png);
+    background-image: url(./../img/header.png);
 }
 .contenido {
     padding: 30px;
