@@ -10,7 +10,6 @@ header {
     height: 80px;
 }
 div {
-    filter: drop-shadow(5px 5px 15px rgb(94, 255, 0));
     flex-wrap: wrap;
 }
 @keyframes logo {
@@ -36,6 +35,8 @@ h1 {
     animation-iteration-count: infinite;
     width: auto;
     height: auto;
+    display: inline;
+    text-align: center;
 }
 h2 {
     display: inline;
@@ -52,7 +53,7 @@ h2 {
 
 .menu {
     right: 10px;
-    position:fixed;
+    position:absolute;
 }
 nav ul{
     text-align:center;
@@ -103,16 +104,16 @@ nav ul li a:hover {
     box-shadow: 5px 5px 30px rgb(94, 255, 0);
     border-top: 4px solid rgb(255, 255, 255);
     border-left: 4px solid rgb(255, 255, 255);
-    border-radius: 20%;
     font-size: 25px;
     text-shadow: 5px 5px 30px rgb(255, 255, 255)
 }
 .iniciarSesion {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     color: rgb(94, 255, 0);
+    height: 550px;
 }
 .input {
     background-color: rgb(0, 0, 0);
@@ -124,8 +125,10 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: center;
     color: rgb(94, 255, 0);
+    width: 150px;
+    margin: auto;
 }
 form {
     display: flex;
@@ -141,6 +144,7 @@ p {
 }
 .img__certificados {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 500px;
     align-content: center;
@@ -178,7 +182,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100px;
+    width: 150px;
     margin: 10px auto 10px auto;
     
 
@@ -186,4 +190,10 @@ footer {
 .contacto {
     width: 100px;
     margin: 10px auto 10px auto;
+}
+input:hover {
+    filter: drop-shadow(5px 5px 15px rgb(94, 255, 0));
+}
+img:hover {
+    filter: drop-shadow(5px 5px 15px rgb(94, 255, 0));
 }
