@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="./styles/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" href="./../img/icono.ico" />
     <title>Matias Sebastian Rueda</title>
@@ -15,34 +21,64 @@
         <img src="./img/icono.png" alt="logo" class="logo" />
       </div>
       <h1><{MSR}></h1>
-      <nav class="menu">
-        <ul>
-          <li><a href="./paginas/iniciar-sesion.html"> Iniciar sesion </a></li>
-          <li><a href="./paginas/registro-usuario.html"> Registrarse </a></li>
-          <li><a href="./paginas/certificados.html"> Certificados </a></li>
-          <li><a href="./paginas/contacto.html"> Contacto </a></li>
-        </ul>
+      <nav class="menu navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  href="./paginas/registro-usuario.html"
+                  class="nav-link active"
+                >
+                  Registrarse
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./paginas/iniciar-sesion.html" class="nav-link active">
+                  Iniciar sesion
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./paginas/certificados.html" class="nav-link active">
+                  Certificados
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./paginas/contacto.html" class="nav-link active">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <section class="content">
-      <p class="contenido">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi vel modi
-        iure quis rem perferendis quibusdam voluptas libero reiciendis officiis.
-        Numquam ducimus, itaque possimus reprehenderit nulla officiis incidunt
-        omnis? Vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Recusandae nesciunt ad fugiat est aperiam tempore, doloremque libero
-        dolor maxime consequuntur ab omnis mollitia quasi voluptatum temporibus
-        quae eveniet a ea? Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Quidem accusantium cum laudantium debitis voluptatibus
-        praesentium, hic numquam. Modi, recusandae hic quas est pariatur
-        mollitia, doloribus saepe, quod animi nulla ad? Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Rem dolor hic in ad optio laboriosam
-        numquam deleniti maxime consequatur sint tempore, repellendus et sunt
-        nihil dolore culpa quo voluptatibus ratione! Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Ut facere autem magni eius quod debitis
-        sequi obcaecati porro dolorum similique rem explicabo odit, minima
-        libero dolorem nostrum provident corporis vero?
-      </p>
+      <div class="presentacion">
+        <img src="./img/Ellipse 1.png" alt="foto" class="img-presentacion" />
+        <br />
+        <h2>Matías Sebastián Rueda</h2>
+      </div>
+      <div>
+        <p class="contenido">
+          Mi nombre es Matias Sebastian Rueda, vivo en Palermo (Ciudad Autonoma
+          de Buenos Aires) Argentina y tengo 33 años. Estoy estudiando en
+          coderhouse y mi objetivo es terminar el full stack de desarrollo web,
+          app y desarrollo de software.
+        </p>
+      </div>
     </section>
     <footer>
       <div class="logo">
@@ -50,6 +86,10 @@
       </div>
       <p>Copyright</p>
     </footer>
-    <script src="./script.js"></script>
+    <script
+      src="./scripts/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
