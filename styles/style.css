@@ -175,7 +175,7 @@ div div img {
 }
 .content {
   width: 100%;
-  height: 500px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
@@ -184,7 +184,7 @@ div div img {
   width: 170px;
 }
 .contenido {
-  padding: 30px;
+  padding: 150px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -217,11 +217,13 @@ img:hover {
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
 }
 @media screen and (max-width: 992px) {
   .gridContainer {
     grid-template-columns: 1fr;
   }
+
   .certificados {
     grid-template-columns: 1fr;
   }
