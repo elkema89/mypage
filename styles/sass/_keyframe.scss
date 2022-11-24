@@ -1,0 +1,19 @@
+@import "variables";
+
+@keyframes logo {
+    0% {
+        filter: drop-shadow(5px 5px 30px $color-secundario);
+    }
+    25% {
+        filter: drop-shadow(5px 5px 30px $color-alternativo);
+    }
+    50% {
+        filter: drop-shadow(5px 5px 30px $color-secundario);
+    }
+    75% {
+        filter: drop-shadow(5px 5px 30px $color-alternativo);
+    }
+    100% {
+        filter: drop-shadow(5px 5px 30px $color-secundario);
+    }
+}

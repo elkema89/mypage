@@ -1,5 +1,8 @@
 body {
   background: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 header {
   background: rgb(0, 0, 0);
@@ -11,9 +14,11 @@ header {
 }
 section {
   background: rgb(0, 0, 0);
+  height: auto;
 }
 div {
   flex-wrap: wrap;
+  height: auto;
 }
 @keyframes logo {
   0% {
@@ -50,6 +55,7 @@ h1 {
   height: auto;
   display: inline;
   text-align: center;
+  color: rgb(0, 0, 0);
 }
 h2 {
   display: inline;
@@ -182,18 +188,20 @@ div div img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .img-presentacion {
   width: 170px;
 }
 .contenido {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 footer {
   display: inline;
   width: 100%;
   align-content: center;
-  margin-bottom: 0px;
+  margin-top: auto;
 }
 .contactos {
   display: flex;
@@ -208,7 +216,7 @@ footer {
   align-items: center;
   transition: 0.5s;
 }
-.contacto:hover{
+.contacto:hover {
   width: 150px;
 }
 input:focus {
@@ -224,15 +232,15 @@ img:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.secContactos {
-  margin: auto;
+.secContactos{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 @media screen and (max-width: 992px) {
   .gridContainer {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-
   .certificados {
     grid-template-columns: 1fr;
   }
