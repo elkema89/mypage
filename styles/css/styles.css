@@ -42,7 +42,8 @@ body {
     body header .menu {
       right: 0px;
       position: absolute;
-      justify-content: space-between; }
+      justify-content: space-between;
+      z-index: 1; }
     body header .navbar-brand {
       margin: 5px;
       color: #0dff00;
@@ -352,3 +353,14 @@ body {
       text-align: center;
       margin: 10px;
       color: #0dff00; }
+
+@media screen and (max-width: 992px) {
+  body .gridContainer {
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  body .certificados {
+    grid-template-columns: 1fr; }
+  body .content {
+    grid-template-columns: 1fr; }
+  body div div img {
+    width: 300px; } }

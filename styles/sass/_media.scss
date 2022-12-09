@@ -1,0 +1,17 @@
+@media screen and (max-width: 992px) {
+  body {
+    .gridContainer {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    .certificados {
+      grid-template-columns: 1fr;
+    }
+    .content {
+      grid-template-columns: 1fr;
+    }
+    div div img {
+      width: 300px;
+    }
+  }
+}
